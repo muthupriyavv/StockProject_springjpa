@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock chart application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="C:\Users\765066\Downloads\springwebproject1\springwebproject1\src\main\webapp\js\AdminLandingPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="C:\Users\765066\Downloads\springwebproject1\springwebproject1\src\main\webapp\css\AdminLandingPage.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:white">StockChart</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" style="color:white">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" style="color:white"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" style="border:1px solid #ccc" >
+        <ul class="nav nav-pills nav-justified">
+                <li class="active"><a data-toggle="pill" href="#importdata">Import Data</a></li>
+                <li><a data-toggle="pill" href="#managecompany" >Manage Company</a></li>
+                <li><a data-toggle="pill" href="#manageexchange">Manage Exchange</a></li>
+                <li><a data-toggle="pill" href="#ipo">Update IPO details</a></li>
+        </ul>
+        <br><br><br>
+     
+        <div class="tab-content">
+ 
+
+                <div id="importdata" class="tab-pane fade in active">
+                <br><br>  
+                <div class="panel panel-default">
+                        <div class="panel-heading">Upload  File</div>
+                        <div class="panel-body">
+                       <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                        <p id="select_text"> Select the excel file to be uploaded </p>
+                            </div>
+                            <div class="col-md-6">
+                        <form method="POST" action="#" enctype="multipart/form-data">
+                            <!-- COMPONENT START -->
+                            <div class="form-group">
+                                <div class="input-group input-file" name="Fichier1">
+                                    <input type="text" class="form-control" placeholder='Choose a file...'/>			
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default btn-choose" type="button">Choose</button>
+                                    </span>
+                        
+                        
+                                </div>
+                            </div>
+                            <!-- COMPONENT END -->
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary pull-right" >Upload</button>
+                                <button type="reset" class="btn btn-danger">Reset</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <br><br><br>
+                    <a href="/download/" id="exceldownload">Click here to download the sample Excel file</a>
+                    </div>
+                
+                
+                </div>
+                <br><br><br>
+                </div>
+
+                    <div id="managecompany" class="tab-pane fade">
+                        <center><p id="manage_title"><b>Choose  to Manage Company</b></p></center>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                   <p style="font-size:22px;text-align:center"><b>Create</b></p>
+                                   <center> <a href="CreateCompany.html" ><img src="C:\Users\765066\Downloads\springwebproject1\springwebproject1\src\main\webapp\images\create_icon.jpg"   alt="create_icon" ></a></center>
+                            </div>
+                            <div class="col-md-6">
+                                    <p style="font-size:22px;text-align:center"><b>Edit</b></p>
+                                   <center> <a href="EditCompany.html"><img src="C:\Users\765066\Downloads\springwebproject1\springwebproject1\src\main\webapp\images\edit_icon.png"   alt="edit_icon" ></a> </center> 
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+
+                    <div id="manageexchange" class="tab-pane fade">
+
+                    </div>
+                    <div id="ipo" class="tab-pane fade">
+
+                    </div>
+
+    </div>
+
+</div>
+</body>
+</html>

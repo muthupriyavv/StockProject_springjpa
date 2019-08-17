@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock chart application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="AdminLandingPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="C:\Users\765066\Downloads\springwebproject1\springwebproject1\src\main\webapp\css\CreateCompany.css">
+</head>
+<body>
+    <div class="container" style="border:1px solid #ccc">
+            <div class="row">
+            <form action="/action_page.php" >
+                  <h1 >Create New Company</h1>
+                  <hr>
+                  <div class="col-md-6">
+                  <label for="companyname"><b>COMPANY NAME</b></label>
+                  <input type="text" placeholder="Enter Company Name" name="companyname" required>
+              
+                  <label for="ceo"><b>CEO</b></label>
+                  <input type="text" placeholder="Enter CEO Name" name="ceo" required>
+              
+                  <label for="directors"><b>BOARD OF DIRECTORS</b></label>
+                  <input type="text" placeholder="Enter the Board of Directors" name="directors" required>
+
+                </div>
+
+                <div class="col-md-6">
+
+                  <label for="turnover"><b>TURNOVER</b></label>
+                  <input type="number" placeholder="Enter turnover" name="turnover" required>
+                  
+                  <label for="brief_description"><b>BRIEF DESCRIPTION</b></label>
+                  <input type="text" placeholder="Enter Brief Description" name="brief_description" required>
+
+                  <label for="ipo_date"><b>IPO DATE</b></label>
+                  <input type="text" placeholder="Enter Ipo date" name="ipo_date" required>
+
+                </div>
+            </div> 
+        
+                  <div class="row">
+                    <button type="submit" class="createbtn">SAVE</button>
+                  </div><br>
+              </form>
+              <br><br>
+            </div>
+</body>
+</html>
